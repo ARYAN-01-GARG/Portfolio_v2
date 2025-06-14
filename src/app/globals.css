@@ -1,20 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #080e21;
   --foreground: #171717;
+  --brand-purple: #9B87F5;
+  --muted-foreground: #7c7f86;
+  --muted: hsl(247 33% 12%);
+  --secondary: hsl(247 33% 12%);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-inter);
+  --color-brand-purple: var(--brand-purple);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #080e21;
     --foreground: #ededed;
   }
 }
@@ -23,4 +31,33 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes draw-line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-draw-line {
+  animation: draw-line 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  width: 0;
+}
+
+@keyframes header-down {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-header-down {
+  animation: header-down 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
