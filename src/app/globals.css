@@ -9,6 +9,8 @@
   --muted: hsl(247 33% 12%);
   --secondary: hsl(247 33% 12%); 
   --glass-panel: #35505A;
+  --blue-500: #3b82f6;
+  --green-500: #22c55e;
   /* NEW: All variables above are now defined for use in components (WhoAmI, etc.) */
 }
 

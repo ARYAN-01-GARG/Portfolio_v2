@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const projects = [
@@ -74,7 +75,7 @@ export default function FeatureSection() {
 									))}
 								</div>
 								<div className="flex justify-between">
-									<a
+									<Link
 										className="inline-flex items-center text-teal-400 hover:text-teal-300 transition-colors"
 										href={project.details}
 									>
@@ -94,8 +95,8 @@ export default function FeatureSection() {
 											<path d="M5 12h14"></path>
 											<path d="m12 5 7 7-7 7"></path>
 										</svg>
-									</a>
-									<a
+									</Link>
+									<Link
 										href={project.github}
 										className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors"
 										target="_blank"
@@ -117,31 +118,17 @@ export default function FeatureSection() {
 											<path d="M9 18c-4.51 2-5-2-7-2"></path>
 										</svg>
 										Source Code
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>
 					))}
 				</div>
 				<div className="mt-12 text-center">
-					<a className="inline-flex items-center px-6 py-3 bg-teal-500 text-white rounded-lg font-medium hover:bg-opacity-90 transition-all">
-						View All Projects
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							strokeWidth="2"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							className="lucide lucide-arrow-right ml-2 h-4 w-4"
-						>
-							<path d="M5 12h14"></path>
-							<path d="m12 5 7 7-7 7"></path>
-						</svg>
-					</a>
+					<Link className="inline-flex items-center px-6 py-3 bg-teal-500 text-white rounded-lg font-medium hover:bg-opacity-90 transition-all" href="/projects">
+            View All Projects
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right ml-2 h-4 w-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </Link>
 				</div>
 			</div>
 		</section>
