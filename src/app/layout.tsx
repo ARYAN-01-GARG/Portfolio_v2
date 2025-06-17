@@ -5,8 +5,7 @@ import Header from "@/Components/header/Header";
 import Footer from "@/Components/footer/Footer";
 
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
@@ -22,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased bg-[#080e21]`}
+        className={`${inter.className} bg-[#080e21]`}
       >
         <Header />
         {children}

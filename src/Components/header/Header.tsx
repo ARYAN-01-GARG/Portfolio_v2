@@ -36,17 +36,15 @@ export default function Header() {
     };
 
     return (
-    <header className="max-w-[1200px] py-5 flex items-center justify-between bg-[#080e21] mx-auto z-50 transition-all duration-300"
-        style={{ opacity: 1, transform: "none" }}
-    >
-        <h1 className="px-4 lg:px-8 flex justify-between items-center text-2xl font-bold text-[#9B87F5]">
+    <header className="max-w-[1200px] py-5 flex items-center justify-between bg-[#080e21] mx-auto z-50 transition-all">
+        <h1 className="px-4 lg:px-8 flex justify-between items-center text-xl font-bold text-[#9B87F5]">
             AG.
         </h1>
         <nav className="">
             <ul className="flex space-x-2 items-center justify-between">
             {navLinks.map((link) => (
-                <li key={link.href} className={`cursor-pointer relative px-4 py-2 group ${isActive(link.href) ? "text-[#9B87F5]" : "text-white hover:text-[#9B87F5] transition duration-300"}`}>
-                    <Link href={link.href} className={`text-sm font-[500]`}>
+                <li key={link.href} className={`cursor-pointer relative px-3 py-1 group ${isActive(link.href) ? "text-[#9B87F5]" : "text-white hover:text-[#9B87F5] transition duration-300"}`}>
+                    <Link href={link.href} className={`text-[0.8rem] font-[500]`}>
                         {link.label}
                         {isActive(link.href) ? (
                             <span className="pointer-events-none absolute left-0 bottom-0 h-[3px] bg-[#9B87F5] rounded-full w-full"></span>
