@@ -6,7 +6,7 @@
   --brand-purple: #9B87F5;
   --muted-foreground: #7c7f86;
   --muted: hsl(247 33% 12%);
-  --secondary: hsl(247 33% 12%);
+  --secondary: hsl(247 33% 12%); 
   --glass-panel : #35505A
   /* NEW: All variables above are now defined for use in components (WhoAmI, etc.) */
 }
