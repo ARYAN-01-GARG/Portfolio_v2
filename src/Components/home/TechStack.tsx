@@ -46,7 +46,7 @@ export default function TechStack() {
 					))}
 				</div>
 				<div>
-					Hello, Aryan this side and I'm a full stack dev 
+					Hello, Aryan this side and I&apos;m a full stack dev 
 				</div>
 			</div>
 		</section>
