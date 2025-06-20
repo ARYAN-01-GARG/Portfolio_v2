@@ -45,6 +45,9 @@ export default function TechStack() {
 						<TechBar key={tech.name} name={tech.name} percent={tech.percent} />
 					))}
 				</div>
+				<div>
+					Hello, Aryan this side and I'm a full stack dev 
+				</div>
 			</div>
 		</section>
 	);
